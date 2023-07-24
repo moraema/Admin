@@ -1,0 +1,93 @@
+.buscar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.buscar-content {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.buscar-input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.buscar-button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(204, 45, 45);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buscar-results {
+    margin-top: 2rem;
+}
+
+.buscar-message {
+    font-size: 1.2rem;
+}
+
+.buscar-table-container {
+    overflow-x: auto;
+}
+
+.buscar-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.buscar-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.buscar-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+
+/* Estilos para pantallas pequeñas */
+
+@media (max-width: 767px) {
+    .buscar-input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .buscar-button {
+        width: 100%;
+    }
+    .buscar-table {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Estilos para pantallas medianas y grandes */
+
+@media (min-width: 768px) {
+    .buscar-input {
+        width: 300px;
+        margin-right: 1rem;
+    }
+    .buscar-button {
+        width: auto;
+    }
+    .buscar-table {
+        width: 83%;
+    }
+}
